@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/admin/dashboard"  element={<Master/>}/>
+          <Route path="/admin/dashboard" name="Admin" render={(props) => <Master {...props} />} />
         </Routes>
       </Router>
     </div>
