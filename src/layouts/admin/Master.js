@@ -1,6 +1,9 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Sidebar from './Sidebar'
+import Footer from './Footer'
+import '../../assets/admin/css/styles.css';
+import '../../assets/admin/js/scripts.js';
 
 export default function Master() {
     return (
@@ -13,8 +16,15 @@ export default function Master() {
                 <div id="layoutSidenav_nav">
                     <Sidebar />
                 </div>
+                <div id="layoutSidenav_content">
+                    <main>
+                        Main Content
+                    </main>
+                    <Footer />
+                </div>
 
             </div>
         </>
     )
 }
+
